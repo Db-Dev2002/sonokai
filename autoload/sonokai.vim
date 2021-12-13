@@ -25,7 +25,6 @@ function! sonokai#get_configuration() "{{{
         \ 'lightline_disable_bold': get(g:, 'sonokai_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'sonokai_diagnostic_text_highlight', 0),
         \ 'diagnostic_line_highlight': get(g:, 'sonokai_diagnostic_line_highlight', 0),
-        \ 'diagnostic_virtual_text': get(g:, 'sonokai_diagnostic_virtual_text', 'grey'),
         \ 'better_performance': get(g:, 'sonokai_better_performance', 0),
         \ }
 endfunction "}}}
@@ -33,13 +32,13 @@ function! sonokai#get_palette(style) "{{{
   if a:style ==# 'default'
     let palette = {
           \ 'black':      ['#181819',   '237'],
-          \ 'bg0':        ['#1d1e1f',   '235'],
-          \ 'bg1':        ['#3c3f41',   '236'],
-          \ 'bg2':        ['#3c3f41',   '236'],
+          \ 'bg0':        ['#1f1f1f',   '235'],
+          \ 'bg1':        ['#232526',   '236'],
+          \ 'bg2':        ['#232526',   '236'],
           \ 'bg3':        ['#3c3f41',   '237'],
           \ 'bg4':        ['#3c3f41',   '237'],
           \ 'bg_red':     ['#ff6077',   '203'],
-          \ 'diff_red':   ['#ff0000',   '52'],
+          \ 'diff_red':   ['#55393d',   '52'],
           \ 'bg_green':   ['#a7df78',   '107'],
           \ 'diff_green': ['#394634',   '22'],
           \ 'bg_blue':    ['#85d3f2',   '110'],
