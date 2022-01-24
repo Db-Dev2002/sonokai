@@ -33,8 +33,8 @@ Features~
 - Vivid colors.
 - Highly customizable.
 - Rich support for common file types and plugins.
-- Semantic highlighting support.
 - Tree-sitter support.
+- Semantic highlighting support.
 - Italic support 🎉
 
 ==============================================================================
@@ -271,6 +271,21 @@ E.g.
     let g:sonokai_menu_selection_background = 'green'
 <
 ------------------------------------------------------------------------------
+                                                    *g:sonokai_spell_foreground*
+g:sonokai_spell_foreground~
+
+By default, this color scheme won't color the foreground of |spell|, instead
+colored under curls will be used. If you also want to color the foreground,
+set this option to `'colored'`.
+
+    Available values: `'none'`, `'colored'`
+    Default value: `'none'`
+
+E.g.
+>
+    let g:sonokai_spell_foreground = 'colored'
+<
+------------------------------------------------------------------------------
                                                             *g:sonokai_show_eob*
 g:sonokai_show_eob~
 
@@ -392,7 +407,7 @@ g:sonokai_better_performance~
 
 The loading time of this color scheme is very long because too many file types
 and plugins are optimized. This feature allows you to load part of the code on
-demand by placing them in the `after/ftplugin` directory.
+demand by placing them in the `after/syntax` directory.
 
 Enabling this option will reduce loading time by approximately 50%.
 
